@@ -1,0 +1,38 @@
+application: carbon-facet-754
+version: v1-0-0 #versao da api - atualizacao da api - correcao de bug
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+#Principais
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /modelos
+  static_dir: modelos
+
+- url: /arquivos
+  static_dir: arquivos
+#Fim dos principais
+
+- url: /upload
+  script: arquivos.php
+
+- url: /
+  script: index.html
+
+# Serve php scripts.
+- url: /(.+\.php)$
+  script: \1
+

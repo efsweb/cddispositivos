@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Modelo do pdf</title>
+		<style>
+			body{
+				background-image: url('../images/pdf_bg.jpg');
+			}
+			
+			.data{
+				text-align: right;
+				font-weight: bold;
+			}
+			.titulo{
+				text-align: center;
+				color: #c00000;
+				font-weight: bold;
+			}
+			.titulo p:first-child{
+				text-decoration: underline;
+			}
+			.titulo p:last-child{
+				font-style: italic;
+			}
+			.info{
+				font-weight: bold;
+			}
+			.total_table{
+				text-align: center;
+			}
+			table{
+				border-top: 0.01em solid #000000;
+				border-bottom: 0.01em solid #000000;
+				border-left: 0.01em solid #000000;
+				margin: 0 auto;
+			}
+			td{
+				color: #000000;
+				font-weight: normal;
+				padding: 2px 5px;
+				border-right: 0.01em solid #000000;
+				border-bottom: 0.01em solid #000000;
+			}
+			.tb_header{
+				border-right: 0.01em solid #000000;
+				border-bottom: 0.01em solid #000000;
+				background-color: #632523;
+				color: #FFFFFF;
+				font-weight: bold;
+				padding: 2px 5px;
+			}
+			.tb_body{
+				background-color: #e5b8b7;
+			}
+			.tb_footer{
+				border-right: 0.01em solid #000000;
+				background-color: #953735;
+				color: #FFFFFF;
+				font-weight: bold;
+				padding: 2px 5px;
+			}
+			.tb_recebidos{
+				width: 100%;
+			}
+			.tb_dados div{
+				font-size: 9pt;
+			}
+			.span_names{
+				font-size: 10pt;
+				font-weight: bold;
+				display: block;
+				width: 45px;
+				float: left;
+			}
+			
+			.right{
+				text-align: right;
+			}
+			.center{
+				text-align: center;
+			}
+			.left{
+				text-align: left;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="estrutura">
+			<div class="data">
+				<p>São Paulo, 19 de Novembro de 2014</p>
+			</div><br />
+			<div class="titulo">
+				<p>LISTA DE DISPOSITIVOS CADASTRADOS</p>
+				<p>APLICATIVO: SprinterInfo MB</p>
+			</div><br />
+			<div class="info">
+				<p>TOTAL DE DISPOSITIVOS CADASTRADOS</p>
+				<div class="total_table">
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td class="tb_header">Dispositivos</td><td class="tb_header">Quantidade</td>
+						</tr>
+						<tr>
+							<td class="tb_body left">Ipad</td><td class="tb_body right">29</td>
+						</tr>
+						<tr>
+							<td class="tb_body left">Android</td><td class="tb_body right">34</td>
+						</tr>
+						<tr>
+							<td class="tb_footer">Total</td><td class="tb_footer right">75</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="files_uploaded">
+				<p class="info">ARQUIVOS RECEBIDOS</p>
+				<div class="files_table">
+					<table class="tb_recebidos" cellpadding="0" cellspacing="0" border="0">
+						<thead>
+							<tr>
+								<th class="tb_header" width="115px">Recebido em</th>
+								<th class="tb_header">Nome do arquivo</th>
+								<th class="tb_header">Enviado por</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td class="center">31/10/2014</td><td class="tb_body">33e8beb95d02288309adf4a388c7f14b.xls</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">arquivo.xlsx</td><td>chap</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 04 04 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 03 28 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 04 02 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 01 31 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 01 31 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">19/11/2014</td><td class="tb_body">test.xls</td><td>yboh</td></tr><tr><td class="center">19/11/2014</td><td class="tb_body">teste.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">test.xls</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 02 04 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 03 17 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 03 19 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 03 26 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 03 21 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">31/10/2014</td><td class="tb_body">2014 04 23 Registro Truck Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">18/11/2014</td><td class="tb_body">2014 10 30 Registro Sprinter Info MB-2.xlsx</td><td>yboh</td></tr><tr><td class="center">10/11/2014</td><td class="tb_body">2014 10 21 Registro Sprinter Info MB.xlsx</td><td>multi</td></tr><tr><td class="center">10/11/2014</td><td class="tb_body">2014 10 22 Registro Sprinter Info MB.xlsx</td><td>multi</td></tr><tr><td class="center">10/11/2014</td><td class="tb_body">2014 10 30 Registro Sprinter Info MB-2.xlsx</td><td>yboh</td></tr><tr><td class="center">11/11/2014</td><td class="tb_body">2014 11 11 Registro Sprinter Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">19/11/2014</td><td class="tb_body">2014 11 17 Registro Sprinter Info MB.xlsx</td><td>yboh</td></tr><tr><td class="center">19/11/2014</td><td class="tb_body">2014 11 11 Registro Sprinter Info MB.xlsx</td><td>yboh</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<pagebreak />
+		<div class="paginas">
+			<div>
+				<p class="info">IPAD's CADASTRADOS - IOS</p>
+			</div>
+			<div>
+				<table class="tb_dispositivos" cellpadding="0" cellspacing="0" border="0">
+					<thead>
+						<tr>
+							<td class="tb_header" width="100px">Incluso em</td>
+							<td class="tb_header center">Descrição</td>
+							<td class="tb_header">Solicitado por</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 35137421855</div>	<div><span class="span_names">Nome: </span>THIAGO SOUSA CAMPOS</div>	<div><span class="span_names">ID: </span>85e1571b249e7363ff52abb0eaa99fff0b085f8b</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4665942676</div>	<div><span class="span_names">Nome: </span>BRUNO DORNELAS CARREIRA</div>	<div><span class="span_names">ID: </span>180bb6d1d3858694ebf2d49079c69e689f7bd856</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 8278279705</div>	<div><span class="span_names">Nome: </span>LUCIANO REZENDE FERREIRA</div>	<div><span class="span_names">ID: </span>A8890A36C5F22B333CE4615F7770E38E71663D7C</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 34673666860</div>	<div><span class="span_names">Nome: </span>LINARA SADAI DOS SANTOS</div>	<div><span class="span_names">ID: </span>841923325d5ac2beccda6d558aedf5dd4e65e94b</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 82209553768</div>	<div><span class="span_names">Nome: </span>CARLOS ALBERTO DE BRITO MACHADO</div>	<div><span class="span_names">ID: </span>24739EB5D70DD2304BFB3109417A25DFB39C6FF2</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 96968524953</div>	<div><span class="span_names">Nome: </span>EDMUND PERSUHN</div>	<div><span class="span_names">ID: </span>86E74764B1CA2EFE3F625DC66AA2A2A865F2C295</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 48235164000</div>	<div><span class="span_names">Nome: </span>JORGE LUIS LAZZERON</div>	<div><span class="span_names">ID: </span>89F3BE01CA8F46C8812FE7D815C6359DD170E3E5</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 85208302187</div>	<div><span class="span_names">Nome: </span>VANESSA AMARAL DA SILVA</div>	<div><span class="span_names">ID: </span>31f804ee68d5d6b98cdf7e990aa8933b6483458e</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4617688951</div>	<div><span class="span_names">Nome: </span>MICHEL DE OLIVEIRA COSTA</div>	<div><span class="span_names">ID: </span>03737B360E0F58F3531A35236247D3BB9F5330CD</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4606122986</div>	<div><span class="span_names">Nome: </span>DIEGO RODRIGO DA SILVA RIBEIRO</div>	<div><span class="span_names">ID: </span>8749658F9BAD16471F75B562950C9D804E1D7469</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 78995779934</div>	<div><span class="span_names">Nome: </span>VANDERLEI PFLEGER</div>	<div><span class="span_names">ID: </span>B6B5D463E666A59D4F1D2237505CED7C1DDFF834</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 29428262900</div>	<div><span class="span_names">Nome: </span>SILVIO ALFARTH</div>	<div><span class="span_names">ID: </span>DB8A7366DABCE860C2F3ED6A95E71E6A47BDEF83</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 29130557968</div>	<div><span class="span_names">Nome: </span>JAIR AGUSTINHO PEREIRA</div>	<div><span class="span_names">ID: </span>B51A408D0BA5B7D48BEEB916928B706BF05DE0D2</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 5464738908</div>	<div><span class="span_names">Nome: </span>FAGNER EXTECKOETTER</div>	<div><span class="span_names">ID: </span>29AAFA2233E9D888B8A1B1FD705E2ACF2D767FA7</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 44525982934</div>	<div><span class="span_names">Nome: </span>AMARCI RAFAEL GASTALDI</div>	<div><span class="span_names">ID: </span>B3EBA32593CCFE4C5F79E41E37D09502C81E430C</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 7210385495</div>	<div><span class="span_names">Nome: </span>IZAURA CRISTINA CASTRO RIBEIRO JATOBÁ</div>	<div><span class="span_names">ID: </span>D62D2EDDF10E0FBF4CB346C276E2BBB6FD072D49</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">31/10/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4057684867</div>	<div><span class="span_names">Nome: </span>DENIZ PEIXOTO</div>	<div><span class="span_names">ID: </span>f4kjx5n8f19d0000000000000000000000000000</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 2471453430</div>	<div><span class="span_names">Nome: </span>JOSE EDSON DA FONSECA LINS</div>	<div><span class="span_names">ID: </span>d1b7921ad3cf64fbbd66b247feb773857c5b5b1e</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 43580327968</div>	<div><span class="span_names">Nome: </span>ROGERIO SERGIO DA SILVA</div>	<div><span class="span_names">ID: </span>04AD2957BFC165AED9E80F572E74EB5DE623917E</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 78995779934</div>	<div><span class="span_names">Nome: </span>VANDERLEI PFLEGER</div>	<div><span class="span_names">ID: </span>B6B5D463E666A59D4F1D2237505CED7C1DDFF834</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4606122986</div>	<div><span class="span_names">Nome: </span>DIEGO RODRIGO DA SILVA RIBEIRO</div>	<div><span class="span_names">ID: </span>8749658F9BAD16471F75B562950C9D804E1D7469</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 48235164000</div>	<div><span class="span_names">Nome: </span>JORGE LUIS LAZZERON</div>	<div><span class="span_names">ID: </span>89F3BE01CA8F46C8812FE7D815C6359DD170E3E5</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 82209553768</div>	<div><span class="span_names">Nome: </span>CARLOS ALBERTO DE BRITO MACHADO</div>	<div><span class="span_names">ID: </span>24739EB5D70DD2304BFB3109417A25DFB39C6FF2</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 34673666860</div>	<div><span class="span_names">Nome: </span>LINARA SADAI DOS SANTOS</div>	<div><span class="span_names">ID: </span>841923325d5ac2beccda6d558aedf5dd4e65e94b</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 8278279705</div>	<div><span class="span_names">Nome: </span>LUCIANO REZENDE FERREIRA</div>	<div><span class="span_names">ID: </span>A8890A36C5F22B333CE4615F7770E38E71663D7C</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4665942676</div>	<div><span class="span_names">Nome: </span>BRUNO DORNELAS CARREIRA</div>	<div><span class="span_names">ID: </span>180bb6d1d3858694ebf2d49079c69e689f7bd856</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 35137421855</div>	<div><span class="span_names">Nome: </span>THIAGO SOUSA CAMPOS</div>	<div><span class="span_names">ID: </span>85e1571b249e7363ff52abb0eaa99fff0b085f8b</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">18/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 54697700791</div>	<div><span class="span_names">Nome: </span>EDUARDO ESPER MOTTA</div>	<div><span class="span_names">ID: </span>5953c79421d981559cf622c04fdf2814c5ea3b60</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 43580327968</div>	<div><span class="span_names">Nome: </span>ROGERIO SERGIO DA SILVA</div>	<div><span class="span_names">ID: </span>04AD2957BFC165AED9E80F572E74EB5DE623917E</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 61828793868</div>	<div><span class="span_names">Nome: </span>PEDRO DAVOLI JUNIOR</div>	<div><span class="span_names">ID: </span>05c956adcdcae4835371c9159f6efc31999acbb9</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 30180408801</div>	<div><span class="span_names">Nome: </span>MICHELE FERRARE TROVÓ</div>	<div><span class="span_names">ID: </span>37C19D7A122D59931E5777781BF177D2ECD2E9AC</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 29911215806</div>	<div><span class="span_names">Nome: </span>PATRICIA ESTER ALVES LUIZ</div>	<div><span class="span_names">ID: </span>4739D215C0F828DB8E55E5C991931702E8555987</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 32024263895</div>	<div><span class="span_names">Nome: </span>ANDERSON RICARDO FERNANDES VELOZO</div>	<div><span class="span_names">ID: </span>5083d4fa0d79d7ed0b6e521f7bb1579ab927aa8c</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 30039973867</div>	<div><span class="span_names">Nome: </span>DAMIÃO ACIOLI DA SILVA</div>	<div><span class="span_names">ID: </span>760f325a918e5b0cc5638b4bbfd1a35719ecf54e</div></td><td valign="middle">	yboh</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<pagebreak />
+		<div class="paginas">
+			<div>
+				<p class="info">ANDROID's CADASTRADOS - ANDROID</p>
+			</div>
+			<div>
+				<table class="tb_dispositivos" cellpadding="0" cellspacing="0" border="0">
+					<thead>
+					<tr>
+						<td class="tb_header" width="100px">Incluso em</td>
+						<td class="tb_header center">Descrição</td>
+						<td class="tb_header">Solicitado por</td>
+					</tr>
+					</thead>
+					<tbody>
+						<tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 7117753625</div>	<div><span class="span_names">Nome: </span>GELGLIMAR ALVES BARBOSA</div>	<div><span class="span_names">ID: </span>RQ1C614S6PL</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 2178793908</div>	<div><span class="span_names">Nome: </span>SUSANE PINTO CORDEIRO</div>	<div><span class="span_names">ID: </span>192.168.0.2</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 3474211994</div>	<div><span class="span_names">Nome: </span>PAULO HENRIQUE DE CARLI</div>	<div><span class="span_names">ID: </span>RQ1D71RHTTY</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 54361540004</div>	<div><span class="span_names">Nome: </span>MARCOS ADAIR FERNANDES RIBEIRO</div>	<div><span class="span_names">ID: </span>172.16.80.231</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 754750060</div>	<div><span class="span_names">Nome: </span>PAOLA MARINA MELLO DA ROSA</div>	<div><span class="span_names">ID: </span>17716251110</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4338377488</div>	<div><span class="span_names">Nome: </span>JOSÉ CORREIA DE AMORIM NETO</div>	<div><span class="span_names">ID: </span>RG1D80WTJRW</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 17438651800</div>	<div><span class="span_names">Nome: </span>CLAUDIO MACIAS</div>	<div><span class="span_names">ID: </span>DellVenue8000275751</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 99124866172</div>	<div><span class="span_names">Nome: </span>LUCIMAR DE JESUS AGUIAR</div>	<div><span class="span_names">ID: </span>af6e6216679c6181</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 29509388840</div>	<div><span class="span_names">Nome: </span>WALTER TREVISAN JUNIOR</div>	<div><span class="span_names">ID: </span>RQ1C80TKQ3B</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 53206487668</div>	<div><span class="span_names">Nome: </span>PRORIVAL BOAVENTURA TEIXEIRA</div>	<div><span class="span_names">ID: </span>1914179</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 48460311015</div>	<div><span class="span_names">Nome: </span>HARRY JAMES PACHECO DE CARVALHO</div>	<div><span class="span_names">ID: </span>Koch.p601ubucnf1</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 746049960</div>	<div><span class="span_names">Nome: </span>MARISTELA JUSVIAK CASAGRANDE</div>	<div><span class="span_names">ID: </span>RQ1C30M41RA</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">31/10/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 1183659750</div>	<div><span class="span_names">Nome: </span>CRISTIANE DOS REIS SANTOS FERNANDES</div>	<div><span class="span_names">ID: </span>RQ1D503MSAX</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">18/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 6036612974</div>	<div><span class="span_names">Nome: </span>EVERTON LUIZ TAVARES</div>	<div><span class="span_names">ID: </span>P5200UBUAMF6</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 38220075449</div>	<div><span class="span_names">Nome: </span>NESVALDO LUIZ DA SILVA</div>	<div><span class="span_names">ID: </span>RQ1D819KHGP</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 48460311015</div>	<div><span class="span_names">Nome: </span>HARRY JAMES PACHECO DE CARVALHO</div>	<div><span class="span_names">ID: </span>Koch.p601ubucnf1</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 53206487668</div>	<div><span class="span_names">Nome: </span>PRORIVAL BOAVENTURA TEIXEIRA</div>	<div><span class="span_names">ID: </span>1914179</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 29509388840</div>	<div><span class="span_names">Nome: </span>WALTER TREVISAN JUNIOR</div>	<div><span class="span_names">ID: </span>RQ1C80TKQ3B</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 17438651800</div>	<div><span class="span_names">Nome: </span>CLAUDIO MACIAS</div>	<div><span class="span_names">ID: </span>DellVenue8000275751</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4338377488</div>	<div><span class="span_names">Nome: </span>JOSÉ CORREIA DE AMORIM NETO</div>	<div><span class="span_names">ID: </span>RG1D80WTJRW</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 754750060</div>	<div><span class="span_names">Nome: </span>PAOLA MARINA MELLO DA ROSA</div>	<div><span class="span_names">ID: </span>17716251110</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 54361540004</div>	<div><span class="span_names">Nome: </span>MARCOS ADAIR FERNANDES RIBEIRO</div>	<div><span class="span_names">ID: </span>172.16.80.231</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 3474211994</div>	<div><span class="span_names">Nome: </span>PAULO HENRIQUE DE CARLI</div>	<div><span class="span_names">ID: </span>RQ1D71RHTTY</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">10/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 2178793908</div>	<div><span class="span_names">Nome: </span>SUSANE PINTO CORDEIRO</div>	<div><span class="span_names">ID: </span>192.168.0.2</div></td><td valign="middle">	multi</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 6867344402</div>	<div><span class="span_names">Nome: </span>EDUARDO FELIPE SILVA ACCIOLY</div>	<div><span class="span_names">ID: </span>356293050242875</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 38220075449</div>	<div><span class="span_names">Nome: </span>NESVALDO LUIZ DA SILVA</div>	<div><span class="span_names">ID: </span>RQ1D819KHGP</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 9928125694</div>	<div><span class="span_names">Nome: </span>BIANCA RIBEIRO RAMOS</div>	<div><span class="span_names">ID: </span>11.813.01.13.00</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 5770221801</div>	<div><span class="span_names">Nome: </span>OSVALDO THEREZA JUNIOR</div>	<div><span class="span_names">ID: </span>fe80::d259:e4ff:fe3c:1acf</div></td><td valign="middle">	yboh</td></tr><tr><td valign="middle">19/11/2014</td><td class="tb_dados" valign="middle">	<div><span class="span_names">YBOH: </span>MB Multiclube - 4502730912</div>	<div><span class="span_names">Nome: </span>JEFERSON SENGER</div>	<div><span class="span_names">ID: </span>rg1d71rj2gb</div></td><td valign="middle">	yboh</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

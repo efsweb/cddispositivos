@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Modelo do pdf</title>
+		<style>
+			body{
+				background-image: url('../images/pdf_bg.jpg');
+			}
+			
+			.data{
+				text-align: right;
+				font-weight: bold;
+			}
+			.titulo{
+				text-align: center;
+				color: #c00000;
+				font-weight: bold;
+			}
+			.titulo p:first-child{
+				text-decoration: underline;
+			}
+			.titulo p:last-child{
+				font-style: italic;
+			}
+			.info{
+				font-weight: bold;
+			}
+			.total_table{
+				text-align: center;
+			}
+			table{
+				border-top: 0.01em solid #000000;
+				border-bottom: 0.01em solid #000000;
+				border-left: 0.01em solid #000000;
+				margin: 0 auto;
+			}
+			td{
+				color: #000000;
+				font-weight: normal;
+				padding: 2px 5px;
+				border-right: 0.01em solid #000000;
+				border-bottom: 0.01em solid #000000;
+			}
+			.tb_header{
+				border-right: 0.01em solid #000000;
+				border-bottom: 0.01em solid #000000;
+				background-color: #632523;
+				color: #FFFFFF;
+				font-weight: bold;
+				padding: 2px 5px;
+			}
+			.tb_body{
+				background-color: #e5b8b7;
+			}
+			.tb_footer{
+				border-right: 0.01em solid #000000;
+				background-color: #953735;
+				color: #FFFFFF;
+				font-weight: bold;
+				padding: 2px 5px;
+			}
+			.tb_recebidos{
+				width: 100%;
+			}
+			.tb_dados div{
+				font-size: 9pt;
+			}
+			.span_names{
+				font-size: 10pt;
+				font-weight: bold;
+				display: block;
+				width: 45px;
+				float: left;
+			}
+			
+			.right{
+				text-align: right;
+			}
+			.center{
+				text-align: center;
+			}
+			.left{
+				text-align: left;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="estrutura">
+			<div class="data">
+				<p>#data#</p>
+			</div><br />
+			<div class="titulo">
+				<p>LISTA DE DISPOSITIVOS CADASTRADOS</p>
+				<p>APLICATIVO: #APLICATIVO#</p>
+			</div><br />
+			<div class="info">
+				<p>TOTAL DE DISPOSITIVOS CADASTRADOS</p>
+				<div class="total_table">
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td class="tb_header">Dispositivos</td><td class="tb_header">Quantidade</td>
+						</tr>
+						<tr>
+							<td class="tb_body left">Ipad</td><td class="tb_body right">#android#</td>
+						</tr>
+						<tr>
+							<td class="tb_body left">Android</td><td class="tb_body right">#ios#</td>
+						</tr>
+						<tr>
+							<td class="tb_footer">Total</td><td class="tb_footer right">#total#</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="files_uploaded">
+				<p class="info">ARQUIVOS RECEBIDOS</p>
+				<div class="files_table">
+					<table class="tb_recebidos" cellpadding="0" cellspacing="0" border="0">
+						<thead>
+							<tr>
+								<th class="tb_header" width="115px">Recebido em</th>
+								<th class="tb_header">Nome do arquivo</th>
+								<th class="tb_header">Enviado por</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							#arquivo#
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<pagebreak />
+		<div class="paginas">
+			<div>
+				<p class="info">IPAD's CADASTRADOS - IOS</p>
+			</div>
+			<div>
+				<table class="tb_dispositivos" cellpadding="0" cellspacing="0" border="0">
+					<thead>
+						<tr>
+							<td class="tb_header" width="100px">Incluso em</td>
+							<td class="tb_header center">Descrição</td>
+							<td class="tb_header">Solicitado por</td>
+						</tr>
+					</thead>
+					<tbody>
+						#iosCad#
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<pagebreak />
+		<div class="paginas">
+			<div>
+				<p class="info">ANDROID's CADASTRADOS - ANDROID</p>
+			</div>
+			<div>
+				<table class="tb_dispositivos" cellpadding="0" cellspacing="0" border="0">
+					<thead>
+					<tr>
+						<td class="tb_header" width="100px">Incluso em</td>
+						<td class="tb_header center">Descrição</td>
+						<td class="tb_header">Solicitado por</td>
+					</tr>
+					</thead>
+					<tbody>
+						#androidCad#
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

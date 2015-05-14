@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id='login' action='login.php' method='post' accept-charset='UTF-8'>
+		<fieldset >
+			<legend>Login</legend>
+			<input type='hidden' name='submitted' id='submitted' value='1'/>
+
+			<label for='username' >UserName*:</label>
+			<input type='text' name='usuario' id='usuario'  maxlength="50" />
+
+			<label for='password' >Password*:</label>
+			<input type='password' name='senha' id='senha' maxlength="50" />
+
+			<input type='submit' name='Submit' value='Submit' />
+
+		</fieldset>
+	</form>
+
+	<form id='forget' action='forget.php' method='post' accept-charset='UTF-8'>
+		<fieldset >
+			<legend>esqueci a senha</legend>
+			<input type='hidden' name='submitted' id='submitted' value='1'/>
+
+			<label for='email' >EMAIL*:</label>
+			<input type='text' name='email' id='email'  maxlength="50" />
+
+			<input type='submit' name='Submit' value='Submit' />
+
+		</fieldset>
+	</form>
+
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<fieldset > 
+			<legend>Upload file</legend>
+			<input type="file" name="0" id="arquivo"><br> 
+			<input type="submit" value="Enviar"> 
+
+			<select id="appname" name="appname" class="form-control" required="">
+				<option value="0">Selecione um app</option>
+				<option value="businfomb">BusInfo MB</option>
+				<option value="sprinterinfomb">SprinterInfo MB</option>
+			</select>
+		</fieldset >
+	</form>
+
+<form action="infoProcess.php" method="post" >
+		<fieldset > 
+			<legend>process uploaded file</legend>
+			<input type="text" name="id" id="id" value="30">
+			<input type="text" name="filename" id="filename" value="6d5becfea7c59e0a924938353f01644f.xls">
+			<input type="text" name="data" id="data" value="31/11/2014">
+			<input type="submit" value="Enviar"> 
+		</fieldset >
+	</form>
+
+
+	<form action="infoProcess.php" method="post" >
+		<fieldset > 
+			<legend>process uploaded file xlsx</legend>
+			<input type="text" name="id" id="id" value="30">
+			<input type="text" name="filename" id="filename" value="6d5becfea7c59e0a924938353f01644f.xlsx">
+			<input type="text" name="data" id="data" value="31/11/2014">
+			<input type="submit" value="Enviar"> 
+		</fieldset >
+	</form>
+	<form action="geraRelatorio.php" method="post" >
+		<fieldset > 
+			<select id="appname" name="appname" class="form-control" required="">
+				<option value="0">Selecione um app</option>
+				<option value="businfomb">BusInfo MB</option>
+				<option value="sprinterinfomb">SprinterInfo MB</option>
+			</select>
+
+			<legend>Gerar relatorio</legend>
+			<input type="submit" value="GerarRelatorio"> 
+		</fieldset >
+	</form>
+
+	<form action="dashboard.php" method="post" >
+		<fieldset > 
+			<legend>loadFiles</legend>
+			<input type="submit" value="load`Files"> 
+		</fieldset >
+	</form>
+	<form action="approveFile.php" method="post" >
+		<fieldset > 
+			<legend>aprovar arquivo</legend>
+			<input type="text" name="id" id="id" value="">
+			<input type="submit" value="aprovarFiles"> 
+		</fieldset >
+	</form>
+
+	<form action="deleteFile.php" method="post" >
+		<fieldset > 
+			<legend>deletar arquivo</legend>
+			<input type="text" name="id" id="id" value="">
+			<input type="submit" value="aprovarFiles"> 
+		</fieldset >
+	</form>
+
+	<form action="logout.php" method="post" >
+		<fieldset > 
+			<legend>logout</legend>
+			<input type="submit" value="logout"> 
+		</fieldset >
+	</form>
+</body>
+</html>
